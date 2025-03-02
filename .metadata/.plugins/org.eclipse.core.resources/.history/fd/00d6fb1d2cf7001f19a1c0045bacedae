@@ -1,0 +1,15 @@
+package test;
+
+import jakarta.servlet.GenericServlet;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
+import jakarta.servlet.annotation.WebServlet;
+
+@WebServlet("/sub")
+public class SubstractionServlet extends GenericServlet
+{
+	public void service(ServletRequest req,ServletResponse res)
+	{
+		
+	}
+}

@@ -1,0 +1,9 @@
+package test;
+
+
+@WebServlet("/choice")
+public class ChoiceServlet extends GenericServlet
+{
+
+	
+}

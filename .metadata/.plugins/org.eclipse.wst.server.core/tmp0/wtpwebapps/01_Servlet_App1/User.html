@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+	<style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+            
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            text-align: center;
+        }
+        h2 {
+			margin-top: 15px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        label {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: left;
+        }
+        input {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            transition: 0.3s;
+        }
+        input:hover, input:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+<body>
+	<form action="user" method="post">
+		 <h2>Enter Your Details</h2>
+		<label>First Name </label>
+		<input type="text" name="fname" required>
+		<label>Last Name </label>
+		<input type="text" name="lname" required>
+		<label>Email </label>
+		<input type="email" name="mail" required>
+		<label>Mobile </label>
+		<input type="number" name="mob" required>
+		<label>Address </label>
+		<input type="text" name="addr" required>
+		<button type="submit">Click</button>
+	</form>
+</body>
+</html>

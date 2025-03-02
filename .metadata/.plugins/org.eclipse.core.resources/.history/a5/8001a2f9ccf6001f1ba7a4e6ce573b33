@@ -1,0 +1,16 @@
+package test;
+
+import jakarta.servlet.GenericServlet;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
+import jakarta.servlet.annotation.WebServlet;
+
+
+@WebServlet("/avg")
+public class AverageServlet extends GenericServlet
+{
+	public void service(ServletRequest req, ServletResponse res)
+	{
+		
+	}
+}

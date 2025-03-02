@@ -1,0 +1,24 @@
+package test;
+
+import java.io.PrintWriter;
+
+import jakarta.servlet.GenericServlet;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
+import jakarta.servlet.annotation.WebServlet;
+
+@WebServlet("/mult")
+public class MultipllicationServlet extends GenericServlet
+{
+	public void service(ServletRequest req, ServletResponse res)
+	{
+		int v1=Integer.parseInt(req.getParameter("v1"));
+		int v2=Integer.parseInt(req.getParameter("v2"));
+		int v3=v1+v2;
+		
+		PrintWriter pw=res.getWriter();
+		res.setContentType("text/html");
+		
+	}
+
+}
