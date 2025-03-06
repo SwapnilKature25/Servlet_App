@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<style>
+		
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+            
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            text-align: center;
+            height: 80vh;
+            
+        }
+        h2 {
+			margin-top: 15px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        label {
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: left;
+        }
+        input {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            transition: 0.3s;
+        }
+        
+        #box{
+			display: flex;
+			flex-direction: row;
+			padding: 10px;
+		}
+		
+		#box input[type="radio"] {
+   			 margin-right: 5px; /* Adds space between radio button and text */
+		}
+
+		#box label {
+   			 margin-right: 15px; /* Adds space between label groups */
+		}
+
+		
+        
+        input:hover, input:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+	</style>
+</head>
+<body>
+	<form action="employee" method="get">
+		<h2>Employee Details</h2>
+		<label>Employee Id  : </label>
+		<input type="number" name="eid">
+		<label>Employee Name  : </label>
+		<input type="text" name="ename">
+		<label>Employee Address  : </label>
+		<input type="text" name="addr">
+		<label>Employee Salary  : </label>
+		<input type="number" name="sal">
+		<label>Employee Gender  : </label>
+		<div id="box">
+			<input type="radio" name="gen" value="Male" id="male">
+    		<label for="male">Male</label>
+    
+    		<input type="radio" name="gen" value="Female" id="female">
+    		<label for="female">Female</label>
+		</div>
+		<label>Employee Profile  : </label>
+		<div id="box">
+			<input type="radio" name="prof" value="Developer">
+			<label for="developer">Developer</label>
+			<input type="radio" name="prof" value="Tester">
+			<label for="tester">Tester</label>
+			<input type="radio" name="prof" value="QA">
+			<label for="QA">QA</label>
+		</div>
+		
+		<label>Employee Hobbies  : </label>
+		<div id="box">
+			<input type="checkbox" name="hob" value="Reading">
+			<label for="reading">Reading</label>
+			<input type="checkbox" name="hob" value="Writing">
+			<label for="writing">Writing</label>
+			<input type="checkbox" name="hob" value="Searching">		
+			<label for="searching">Searching</label>
+			<input type="checkbox" name="hob" value="Coding">
+			<label for="coding">Coding</label>
+		</div>
+		
+		<button type="submit">SUBMIT</button>		
+		
+	</form>
+		
+</body>
+</html>
