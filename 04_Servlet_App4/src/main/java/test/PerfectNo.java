@@ -7,7 +7,7 @@ import jakarta.servlet.GenericServlet;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.annotation.WebServlet;
-
+// 6 => 1+2+3 => 6==6
 @WebServlet("/perfect")
 public class PerfectNo extends GenericServlet
 {

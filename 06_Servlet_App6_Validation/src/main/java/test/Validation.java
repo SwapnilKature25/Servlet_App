@@ -30,6 +30,6 @@ public class Validation extends GenericServlet
 			pw.println("Sorry username or password error !     ");
 			RequestDispatcher rd= req.getRequestDispatcher("index.html");
 			rd.include(req, res);
-		}
+		}	
 	}
 }

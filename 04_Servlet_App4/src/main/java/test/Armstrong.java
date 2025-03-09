@@ -8,6 +8,8 @@ import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.annotation.WebServlet;
 
+// 153 => 1^3 + 5^3+ 3^3 => 153
+
 @WebServlet("/armstrong")
 public class Armstrong extends GenericServlet
 {
