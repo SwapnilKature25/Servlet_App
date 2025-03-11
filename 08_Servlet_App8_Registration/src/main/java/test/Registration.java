@@ -8,13 +8,13 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.annotation.WebServlet;
-@SuppressWarnings("serial")
-@WebServlet("/book")
-public class Book extends GenericServlet
+
+@WebServlet("/reg")
+public class Registration extends GenericServlet
 {
-	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException
+	public void service(ServletRequest req,ServletResponse res) throws ServletException, IOException
 	{
-		RequestDispatcher rd=req.getRequestDispatcher("Book.jsp");
+		RequestDispatcher rd= req.getRequestDispatcher("display.jsp");
 		rd.forward(req, res);
 	}
 }

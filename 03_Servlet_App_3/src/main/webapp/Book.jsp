@@ -13,14 +13,37 @@
 		String bAuthor=request.getParameter("bauthor");	
 		int bPrice=Integer.parseInt(request.getParameter("bprice"));
 		int bQty=Integer.parseInt(request.getParameter("bqty"));
-		
-		out.println("**** Book Details ****");
-		out.println("Book Code : "+bCode+"<br>");
-		out.println("Book Name : "+bName+"<br>");
-		out.println("Book Author : "+bAuthor+"<br>");
-		out.println("Book Price : "+bPrice+"<br>");
-		out.println("Book Quantity : "+bQty+"<br>");
-	
 	%>
+		
+	<h2>Book Details</h2>
+	<table>
+		<tr>
+		<td>Book Code</td>
+		<td><%= bCode %></td>		
+		</tr>
+		
+		<tr>
+		<td>Book Name</td>
+		<td><%= bName %></td>		
+		</tr>
+
+		<tr>
+		<td>Book Author</td>
+		<td><%= bAuthor %></td>		
+		</tr>
+		
+		<tr>
+		<td>Book Price</td>
+		<td><%= bPrice %></td>		
+		</tr>
+
+		<tr>
+		<td>Book Quantity</td>
+		<td><%= bQty %></td>		
+		</tr>
+		
+		
+	</table>
+	
 </body>
 </html>
