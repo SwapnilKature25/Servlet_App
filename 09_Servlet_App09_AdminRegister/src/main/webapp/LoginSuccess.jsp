@@ -7,12 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%
-		out.println("Login Successfull....<br>");
-	%>
+	<br>
 	<a href="AddBook.html">Add Book</a> <br>
-	<a href="DeletBook">Delete Book</a> <br>
-	<a href="UpdateBook">Update Book</a> <br>
-	<a href="ViewBook">View AllBook</a> <br>
+	<a href="DeleteBook.html">Delete Book</a> <br>
+	<a href="UpdateBook.html">Update Book</a> <br>
+	<a href="ViewBook.html">View AllBook</a> <br>
 </body>
 </html>

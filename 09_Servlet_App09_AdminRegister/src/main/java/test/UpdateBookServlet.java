@@ -10,32 +10,26 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @SuppressWarnings("serial")
-@WebServlet("/addbook")
-public class AddBookServlet extends HttpServlet
+@WebServlet("/updBook")
+public class UpdateBookServlet extends HttpServlet
 {
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException
 	{
-		BookBean b = new BookBean();
-		b.setbId(Integer.parseInt(req.getParameter("bid")));
-		b.setbName(req.getParameter("bname"));
-		b.setbAuthor(req.getParameter("bauthor"));
-		b.setbPrice(Integer.parseInt(req.getParameter("bprice")));
-		b.setbQty(Integer.parseInt(req.getParameter("bqty")));
-		
-		int k = new AddBookDao().add(b);
 		PrintWriter pw = res.getWriter();
 		res.setContentType("text/html");
 		
-		if(k > 0)
+		UpdateBookDao ub = new UpdateBookDao();
+		int k = ub.updateBook(req);
+		
+		if( k > 0)
 		{
-			pw.println("Book Details added successfully....");
+			pw.println("Book Updated Successfully....");
 			req.getRequestDispatcher("LoginSuccess.jsp").include(req, res);
 		}
-		else 
+		else
 		{
-			pw.println("Failed to add Book Details!");
+			pw.println("Failed to update book!!");			
 		}
 		
 	}
-	
 }

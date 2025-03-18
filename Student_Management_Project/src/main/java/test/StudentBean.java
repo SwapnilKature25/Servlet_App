@@ -6,7 +6,10 @@ import java.io.Serializable;
 public class StudentBean implements Serializable
 {
 	private String rollNo,name,course;
-	private MarksBean mb = new MarksBean();
+	private int totMarks;
+	private float per;
+	private String result;
+	private MarksBean mk = new MarksBean();
 	
 	public StudentBean() {}
 
@@ -34,13 +37,38 @@ public class StudentBean implements Serializable
 		this.course = course;
 	}
 
-	public MarksBean getMb() {
-		return mb;
+	public int getTotMarks() {
+		return totMarks;
 	}
 
-	public void setMb(MarksBean mb) {
-		this.mb = mb;
+	public void setTotMarks(int totMarks) {
+		this.totMarks = totMarks;
 	}
+
+	public float getPer() {
+		return per;
+	}
+
+	public void setPer(float per) {
+		this.per = per;
+	}
+
+	public String getResult() {
+		return result;
+	}
+
+	public void setResult(String result) {
+		this.result = result;
+	}
+
+	public MarksBean getMk() {
+		return mk;
+	}
+
+	public void setMk(MarksBean mk) {
+		this.mk = mk;
+	}
+
 	
 	
 

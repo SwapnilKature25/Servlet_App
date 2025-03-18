@@ -20,6 +20,7 @@ public class LoginServlet extends HttpServlet
 		res.setContentType("text/html");
 		if(ab != null)
 		{
+			pw.println("Login Successfull....");
 			req.getRequestDispatcher("LoginSuccess.jsp").forward(req, res);
 		}
 		else 
