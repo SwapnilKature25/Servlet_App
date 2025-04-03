@@ -10,10 +10,10 @@
 </head>
 <body>
 	<%
-	 AdminBean ab = (AdminBean)session.getAttribute("abean");
-	 String msg =(String) request.getAttribute("msg");
-	 out.println("Page belongs to Admin : "+ab.getfName()+"<br>");
-	 out.println(msg);
+	AdminBean ab = (AdminBean)session.getAttribute("abean");
+			 String msg =(String) request.getAttribute("msg");
+			 out.println("Page belongs to Admin : "+ab.getfName()+"<br>");
+			 out.println(msg);
 	%>
 	
 	<a href="AddStudent.html">AddStudent</a>

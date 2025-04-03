@@ -7,6 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<%
+		session.removeAttribute("abean");
+		session.removeAttribute("alist");
+		session.invalidate();
+		out.println("Admin LoggedOut successfully...<br>");
+		
+	%>
+	
+	<%@include file="Home.html" %>
 </body>
 </html>

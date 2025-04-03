@@ -28,11 +28,6 @@ public class ViewAllBookDao {
 			ResultSet rs = ps.executeQuery();
 			while(rs.next())
 			{
-				/*pw.println("Book Id : "+rs.getInt(1)
-						+"\nBook Name : "+rs.getString(2)
-						+"\nBook Author : "+rs.getString(3)
-						+"\nBook Price : "+rs.getInt(4)
-						+"\nBook Qty : "+rs.getInt(5));	*/
 				BookBean bb = new BookBean();
 				bb.setbId(rs.getInt(1));
 				bb.setbName(rs.getString(2));

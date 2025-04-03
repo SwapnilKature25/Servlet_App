@@ -10,9 +10,8 @@
 </head>
 <body>
 	<%
-		AdminBean ab = (AdminBean)session.getAttribute("abean");
+	AdminBean ab = (AdminBean)session.getAttribute("abean");
 		out.println("Welcome Admin : "+ab.getfName()+"<br>");
-		
 	%>
 	<a href="Student.html">AddStudent</a>
 	<a href="view">ViewAllStudents</a>

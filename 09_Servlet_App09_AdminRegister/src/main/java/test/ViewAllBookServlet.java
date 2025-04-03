@@ -15,15 +15,15 @@ public class ViewAllBookServlet extends HttpServlet
 {
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException
 	{
-		//req.getRequestDispatcher("ViewAllBookDao.java").forward(req, res);
 	List<BookBean> lst=	new ViewAllBookDao().viewAllBooks(req);
 	if(lst==null)
 	{
 		req.setAttribute("msg","Book not available");
+		req.getRequestDispatcher("Msg.jsp").forward(req, res);
 	}
 	else {
 		req.setAttribute("al", lst);
+		req.getRequestDispatcher("ViewBooks.jsp").forward(req, res);
 	}
-	req.getRequestDispatcher("ViewBooks.jsp").forward(req, res);
 	}
 }
