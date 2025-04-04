@@ -24,6 +24,7 @@ public class ViewAllStudentServlet extends HttpServlet
 		}
 		else {
 			ArrayList<StudentBean> al=new ViewAllStudentsDao().retrieve();
+//			al.forEach(System.out::println);
 			hs.setAttribute("alist", al);   // list object added to session
 			req.getRequestDispatcher("ViewAllStudents.jsp").forward(req, res);
 			

@@ -19,7 +19,7 @@ public class AddStudentDAO {
 					("insert into Student values (?,?,?,?,?,?) ");
 			PreparedStatement ps2 = con.prepareStatement
 					("insert into Marks values (?,?,?,?,?,?) ");
-			//System.out.println("Executed");
+			
 			ps1.setString(1, sb.getRollNo());
 			ps1.setString(2, sb.getName());
 			ps1.setString(3, sb.getCourse());
@@ -29,7 +29,6 @@ public class AddStudentDAO {
 			System.out.println("Executed");
 			int p = ps1.executeUpdate();
 			System.out.println("2 Executed");
-			System.out.println(p);
 			if(p>0)
 			{
 				ps2.setString(1, sb.getRollNo());
@@ -39,7 +38,6 @@ public class AddStudentDAO {
 				ps2.setInt(5, sb.getMk().getDb());
 				ps2.setInt(6, sb.getMk().getTools());
 				k = ps2.executeUpdate();
-				System.out.println(k);
 			}
 			
 		}

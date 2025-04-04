@@ -17,7 +17,6 @@ public class AddStudentServlet extends HttpServlet
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException
 	{
 		PrintWriter pw = res.getWriter();
-//		pw.println("inside stud servlet");
 		HttpSession hs = req.getSession(false);  // Accessing existing session
 		if(hs==null)
 		{

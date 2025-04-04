@@ -28,7 +28,7 @@ public class CustomerAdminLoginServlet extends HttpServlet
 			Cookie ck = new Cookie("fname",ab.getfName());
 			res.addCookie(ck);   // Cookie is added to response
 			req.setAttribute("fn", ab.getfName());
-;			req.getRequestDispatcher("CustomerAdminLogin.jsp").forward(req, res);
+			req.getRequestDispatcher("CustomerAdminLogin.jsp").forward(req, res);
 		}
 	}
 	

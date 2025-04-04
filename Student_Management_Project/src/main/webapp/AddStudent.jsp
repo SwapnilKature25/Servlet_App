@@ -17,7 +17,7 @@
 	%>
 	
 	<a href="AddStudent.html">AddStudent</a>
-	<a href="ViewStudent.html">ViewAllStudent</a>
+	<a href="viewAllStudents">ViewAllStudent</a>
 	<a href="Logout">Logout</a>
 	
 </body>

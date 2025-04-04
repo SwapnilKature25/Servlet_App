@@ -22,7 +22,7 @@
 		);
 	%>
 	<a href="edit?rno=<%= sb.getRollNo() %>">EditMarks</a>
-	<a href="student.html">AddStudent</a>
+	<a href="Student.html">AddStudent</a>
 	<a href="view">ViewAllStudent</a>
 	<a href="logout">Logout</a>
 	

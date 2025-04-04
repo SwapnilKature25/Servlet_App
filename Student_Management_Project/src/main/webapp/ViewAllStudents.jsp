@@ -10,28 +10,28 @@
 </head>
 <body>
 	<%
-	AdminBean ab =(AdminBean) session.getAttribute("abean");
+			AdminBean ab =(AdminBean) session.getAttribute("abean");
 			ArrayList<StudentBean> al =(ArrayList<StudentBean>) session.getAttribute("alist");
 			out.println("Page belongs to Admin : "+ab.getfName()+"<br>");
 			
 			if(al.size() == 0)
 			{
-		out.println("No Students Available...<br>");
+				out.println("No Students Available...<br>");
 			}
 			else {
-		Iterator<StudentBean> it=al.iterator();
-		while(it.hasNext())
-		{
-			StudentBean sb=(StudentBean)it.next();
-			out.println(sb.getRollNo()+"&nbsp&nbsp"+
-						sb.getName()+ "&nbsp&nbsp"+
-						sb.getCourse()+"&nbsp&nbsp"+
-						sb.getTotMarks()+"&nbsp&nbsp"+
-						sb.getPer()+"&nbsp&nbsp"+
-						sb.getResult()+"&nbsp&nbsp"+
-						"<a href = 'viewm?rno= "+
-						sb.getRollNo()+"'>ViewMarks</a><br>");
-		}
+				Iterator<StudentBean> it=al.iterator();
+				while(it.hasNext())
+				{
+					StudentBean sb=(StudentBean)it.next();
+					out.println(sb.getRollNo()+"&nbsp&nbsp"+
+								sb.getName()+ "&nbsp&nbsp"+
+								sb.getCourse()+"&nbsp&nbsp"+
+								sb.getTotMarks()+"&nbsp&nbsp"+
+								sb.getPer()+"&nbsp&nbsp"+
+								sb.getResult()+"&nbsp&nbsp"+
+								"<a href='viewm?rno="+
+								sb.getRollNo()+"'>ViewMarks</a><br>");
+				}
 			}
 	%>
 	
