@@ -12,7 +12,7 @@ public class ViewAllCustomersDao {
 		try
 		{
 			Connection con = DBConnection.getCon();
-			PreparedStatement ps = con.prepareStatement("select * from CustomerAdmin");
+			PreparedStatement ps = con.prepareStatement("select * from Customer71");
 			ResultSet rs=ps.executeQuery();
 			while(rs.next())
 			{
